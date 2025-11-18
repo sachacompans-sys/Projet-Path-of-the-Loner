@@ -1,4 +1,4 @@
-class weapon:
-    def init(self, damage=float, name=str):
+class Weapon:
+    def __init__(self, damage=float, name=str):
         self.damage = damage
         self.name = name
