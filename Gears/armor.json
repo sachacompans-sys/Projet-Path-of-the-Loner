@@ -1,46 +1,55 @@
 [
     {
-        "id": "Casque barbares d'élites",
+        "id": 1,
+        "name": "Casque barbares d'élites",
         "rarity": "Rare",
         "defense": 15
     },
     {
-        "id": "Armure Pekka",
+        "id": 2,
+        "name": "Armure PEKKA",
         "rarity": "Epic",
         "defense": 30
     },
     {
-        "id": "Heaume en métal prince ténébreux",
+        "id": 3,
+        "name": "Heaume en métal prince ténébreux",
         "rarity": "Common",
         "defense": 10
     },
     {
-        "id": "Bouclier Recrues Royales",
+        "id": 4,
+        "name": "Bouclier Recrues Royales",
         "rarity": "Legendary",
         "defense": 40
     },
     {
-        "id": "Habit de la Sorcière de Nuit",
+        "id": 5,
+        "name": "Habit de la Sorcière de Nuit",
         "rarity": "Rare",
         "defense": 18
     },
     {
-        "id": "Tunique de l'Électro-Sorcier",
+        "id": 6,
+        "name": "Tunique de l'Électro-Sorcier",
         "rarity": "Common",
         "defense": 11
     },
     {
-        "id": "Armure Squelette Géant",
+        "id": 7,
+        "name": "Armure Squelette Géant",
         "rarity": "Epic",
         "defense": 35
     },
     {
-        "id": "Armure du Mortier Solaire",
+        "id": 8,
+        "name": "Armure du Mortier Solaire",
         "rarity": "Legendary",
         "defense": 38
     },
     {
-        "id": "Vareuse du pêcheur",
+        "id": 9,
+        "name": "Vareuse du pêcheur",
         "rarity": "Epic",
         "defense": 32
     }
