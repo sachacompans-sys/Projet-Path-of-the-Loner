@@ -52,5 +52,35 @@
         "name": "Vareuse du pêcheur",
         "rarity": "Epic",
         "defense": 32
+    },
+    {
+        "id": 10,
+        "name": "Épaulettes de la Valkyrie",
+        "rarity": "Rare",
+        "defense": 17
+    },
+    {
+        "id": 11,
+        "name": "Cape du Sorcier de Glace",
+        "rarity": "Epic",
+        "defense": 37
+    },
+    {
+        "id": 12,
+        "name": "Bottes du Mineur",
+        "rarity": "Common",
+        "defense": 8
+    },
+    {
+        "id": 13,
+        "name": "Diadème de la Princesse",
+        "rarity": "Rare",
+        "defense": 20
+    },
+    {
+        "id": 14,
+        "name": "Cuirasse du Molosse de Lave",
+        "rarity": "Legendary",
+        "defense": 50
     }
 ]
