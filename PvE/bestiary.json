@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "Name": "Geant Gobelin",
+        "Type": "Normal",
+        "HP": 500,
+        "Damage": 75,
+        "Defense": 10
+    },
+    {
+        "id": 2,
+        "Name": "Bébé Dragon",
+        "Type": "Normal",
+        "HP": 300,
+        "Damage": 150,
+        "Defense": 7
+    },
+    {
+        "id": 3,
+        "Name": "Ballon",
+        "Type": "Normal",
+        "HP": 500,
+        "Damage": 75,
+        "Defense": 14
+    },
+    {
+        "id": 4,
+        "Name": "Mini PEKKA",
+        "Type": "Normal",
+        "HP": 350,
+        "Damage": 100,
+        "Defense": 10
+    },
+    {
+        "id": 5,
+        "Name": "Dragon",
+        "Type": "Elite",
+        "HP": 900,
+        "Damage": 150,
+        "Defense": 5
+    },
+    {
+        "id": 6,
+        "Name": "Electro-Dragon",
+        "Type": "Elite",
+        "HP": 1150,
+        "Damage": 95,
+        "Defense": 20
+    },
+    {
+        "id": 7,
+        "Name": "Molosse de Lave",
+        "Type": "Elite",
+        "HP": 1300,
+        "Damage": 70,
+        "Defense": 25
+    },
+    {
+        "id": 8,
+        "Name": "Dragon Squelette",
+        "Type": "Elite",
+        "HP": 750,
+        "Damage": 200,
+        "Defense": 5
+    },
+    {
+        "id": 9,
+        "Name": "Le Roi des Barbares",
+        "Type": "Boss",
+        "HP": 1900,
+        "Damage": 200,
+        "Defense": 35
+    },
+    {
+        "id": 10,
+        "Name": "La Reine des Archers",
+        "Type": "Boss",
+        "HP": 1700,
+        "Damage": 350,
+        "Defense": 10
+    },
+    {
+        "id": 11,
+        "Name": "Le Grand Gardien",
+        "Type": "Boss",
+        "HP": 2300,
+        "Damage": 100,
+        "Defense": 35
+    },
+    {
+        "id": 12,
+        "Name": "Le Prince Gargouille",
+        "Type": "Boss",
+        "HP": 1800,
+        "Damage": 250,
+        "Defense": 10
+    }
+]
