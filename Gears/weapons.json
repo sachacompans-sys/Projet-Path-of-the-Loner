@@ -1,109 +1,127 @@
 [
     {
-        "id": "Arc-X",
+        "id": 1,
+        "name": "Arc-X",
         "damage": 100,
         "bonus": "vitesse de frappe",
         "rarity": "Legendary"
     },
     {
-        "id": "pelle mineur",
-        "Bonus": "",
+        "id": 2,
+        "name": "Pelle Mineur",
+        "bonus": "",
         "damage": 15,
         "rarity": "Common"
     },
     {
-        "id": "épée barbare",
-        "Bonus": "",
+        "id": 3,
+        "name": "Epée Barbare",
+        "bonus": "",
         "damage": 25,
         "rarity": "Common"
     },
     {
-        "id": "arc archère",
-        "Bonus": "",
+        "id": 4,
+        "name": "Arc Archère",
+        "bonus": "",
         "damage": 25,
         "rarity": "Common"
     },
     {
-        "id": "bombe squelette",
-        "Bonus": "",
+        "id": 5,
+        "name": "Bombe Squelette",
+        "bonus": "",
         "damage": 50,
         "rarity": "Rare"
     },
     {
-        "id": "hache valkirie",
-        "Bonus": "",
+        "id": 6,
+        "name": "Hâche Valkirie",
+        "bonus": "",
         "damage": 74,
         "rarity": "Epic"
     },
     {
-        "id": "marteau Chevaucheur de cochon",
-        "Bonus": "",
+        "id": 7,
+        "name": "Marteau Chevaucheur de cochon",
+        "bonus": "",
         "damage": 58,
         "rarity": "Rare"
     },
     {
-        "id": "boule du bouliste",
-        "Bonus": "",
+        "id": 8,
+        "name": "Boule du Bouliste",
+        "bonus": "",
         "damage": 60,
         "rarity": "Rare"
     },
     {
-        "id": "lance sorciere de la nuit",
-        "Bonus": "",
+        "id": 9,
+        "name": "Lance Sorcière de la nuit",
+        "bonus": "",
         "damage": 25,
         "rarity": "Common"
     },
     {
-        "id": "arc archer magique",
-        "Bonus": "",
+        "id": 10,
+        "name": "Arc Archer magique",
+        "bonus": "",
         "damage": 35,
         "rarity": "Rare"
     },
     {
-        "id": "hache bucheron",
-        "Bonus": "",
+        "id": 11,
+        "name": "Hâche Bucheron",
+        "bonus": "",
         "damage": 46,
         "rarity": "Common"
     },
     {
-        "id": "poisson pecheur",
-        "Bonus": "",
+        "id": 12,
+        "name": "Poisson Pêcheur",
+        "bonus": "",
         "damage": 10,
         "rarity": "Common"
     },
     {
-        "id": "fusil chasseur",
-        "Bonus": "",
+        "id": 13,
+        "name": "Fusil Chasseur",
+        "bonus": "",
         "damage": 65,
         "rarity": "Epic"
     },
     {
-        "id": "serbacane gobelin",
-        "Bonus": "",
+        "id": 14,
+        "name": "Serbacane Gobelin",
+        "bonus": "",
         "damage": 31,
         "rarity": "Rare"
     },
     {
-        "id": "lance roquette artificiere",
-        "Bonus": "",
+        "id": 15,
+        "name": "Lance-roquette Artificière",
+        "bonus": "",
         "damage": 84,
         "rarity": "Legendary"
     },
     {
-        "id": "arc triple fleche princesse",
-        "Bonus": "",
+        "id": 16,
+        "name": "Arc triple-flèches Princesse",
+        "bonus": "",
         "damage": 92,
         "rarity": "Legendary"
     },
     {
-        "id": "epee PEKKA",
-        "Bonus": "",
+        "id": 17,
+        "name": "Epée PEKKA",
+        "bonus": "",
         "damage": 72,
         "rarity": "Epic"
     },
     {
-        "id": "hache boomerang bourreau",
-        "Bonus": "",
+        "id": 18,
+        "name": "Hâche-boomerang Bourreau",
+        "bonus": "",
         "damage": 67,
         "rarity": "Epic"
     }
