@@ -1,0 +1,110 @@
+[
+    {
+        "id": "Arc-X",
+        "damage": 100,
+        "bonus": "vitesse de frappe",
+        "rarity": "Legendary"
+    },
+    {
+        "id": "pelle mineur",
+        "Bonus": "",
+        "damage": 15,
+        "rarity": "Common"
+    },
+    {
+        "id": "épée barbare",
+        "Bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": "arc archère",
+        "Bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": "bombe squelette",
+        "Bonus": "",
+        "damage": 50,
+        "rarity": "Rare"
+    },
+    {
+        "id": "hache valkirie",
+        "Bonus": "",
+        "damage": 74,
+        "rarity": "Epic"
+    },
+    {
+        "id": "marteau Chevaucheur de cochon",
+        "Bonus": "",
+        "damage": 58,
+        "rarity": "Rare"
+    },
+    {
+        "id": "boule du bouliste",
+        "Bonus": "",
+        "damage": 60,
+        "rarity": "Rare"
+    },
+    {
+        "id": "lance sorciere de la nuit",
+        "Bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": "arc archer magique",
+        "Bonus": "",
+        "damage": 35,
+        "rarity": "Rare"
+    },
+    {
+        "id": "hache bucheron",
+        "Bonus": "",
+        "damage": 46,
+        "rarity": "Common"
+    },
+    {
+        "id": "poisson pecheur",
+        "Bonus": "",
+        "damage": 10,
+        "rarity": "Common"
+    },
+    {
+        "id": "fusil chasseur",
+        "Bonus": "",
+        "damage": 65,
+        "rarity": "Epic"
+    },
+    {
+        "id": "serbacane gobelin",
+        "Bonus": "",
+        "damage": 31,
+        "rarity": "Rare"
+    },
+    {
+        "id": "lance roquette artificiere",
+        "Bonus": "",
+        "damage": 84,
+        "rarity": "Legendary"
+    },
+    {
+        "id": "arc triple fleche princesse",
+        "Bonus": "",
+        "damage": 92,
+        "rarity": "Legendary"
+    },
+    {
+        "id": "epee PEKKA",
+        "Bonus": "",
+        "damage": 72,
+        "rarity": "Epic"
+    },
+    {
+        "id": "hache boomerang bourreau",
+        "Bonus": "",
+        "damage": 67,
+        "rarity": "Epic"
+    }
+]
