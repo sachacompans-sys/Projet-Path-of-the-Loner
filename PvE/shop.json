@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Casque barbares d'élites",
+        "gold": 450,
+        "type": "armor",
+        "rarity": "Rare",
+        "defense": 15
+    },
+    {
+        "id": 2,
+        "name": "Armure PEKKA",
+        "gold": 2500,
+        "type": "armor",
+        "rarity": "Epic",
+        "defense": 30
+    },
+    {
+        "id": 3,
+        "name": "Heaume en métal prince ténébreux",
+        "gold": 120,
+        "type": "armor",
+        "rarity": "Common",
+        "defense": 10
+    },
+    {
+        "id": 4,
+        "name": "Bouclier Recrues Royales",
+        "gold": 6500,
+        "type": "armor",
+        "rarity": "Legendary",
+        "defense": 40
+    },
+    {
+        "id": 5,
+        "name": "Habit de la Sorcière de Nuit",
+        "gold": 600,
+        "type": "armor",
+        "rarity": "Rare",
+        "defense": 18
+    },
+    {
+        "id": 6,
+        "name": "Tunique de l'Électro-Sorcier",
+        "gold": 150,
+        "type": "armor",
+        "rarity": "Common",
+        "defense": 11
+    },
+    {
+        "id": 7,
+        "name": "Armure Squelette Géant",
+        "gold": 3200,
+        "type": "armor",
+        "rarity": "Epic",
+        "defense": 35
+    },
+    {
+        "id": 1,
+        "name": "Arc-X",
+        "gold": 9000,
+        "type": "weapon",
+        "rarity": "Legendary",
+        "damage": 100
+    },
+    {
+        "id": 2,
+        "name": "Pelle Mineur",
+        "gold": 80,
+        "type": "weapon",
+        "rarity": "Common",
+        "damage": 15
+    },
+    {
+        "id": 6,
+        "name": "Hâche Valkirie",
+        "gold": 4000,
+        "type": "weapon",
+        "rarity": "Epic",
+        "damage": 74
+    },
+    {
+        "id": 7,
+        "name": "Marteau Chevaucheur de cochon",
+        "gold": 1200,
+        "type": "weapon",
+        "rarity": "Rare",
+        "damage": 58
+    },
+    {
+        "id": 9,
+        "name": "Lance Sorcière de la nuit",
+        "gold": 100,
+        "type": "weapon",
+        "rarity": "Common",
+        "damage": 25
+    },
+    {
+        "id": 13,
+        "name": "Fusil Chasseur",
+        "gold": 3500,
+        "type": "weapon",
+        "rarity": "Epic",
+        "damage": 65
+    },
+    {
+        "id": 15,
+        "name": "Lance-roquette Artificière",
+        "gold": 8000,
+        "type": "weapon",
+        "rarity": "Legendary",
+        "damage": 84
+    },
+    {
+        "id": 17,
+        "name": "Epée PEKKA",
+        "gold": 3800,
+        "type": "weapon",
+        "rarity": "Epic",
+        "damage": 72
+    }
+]
