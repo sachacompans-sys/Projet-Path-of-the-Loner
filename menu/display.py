@@ -1,4 +1,4 @@
-import pvp
+from menu import pvp
 import os
 
 def display_menu():

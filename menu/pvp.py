@@ -1,5 +1,7 @@
 from time import sleep
 from ascendency import hero
+import os
+
 
 class opponent:
     def __init__(self, name: str="waiting", pv: int=1000, defense: int=0, attack: int=0, mana: int = 0, dodge: int = 0):
@@ -19,19 +21,16 @@ class opponent:
         choice_player1 = input ("choisis ton Héro ou une ascendance : hero(1) / archère(2) / guerrier(3) / magicienne(4) : ")
         print()
         if choice_player1 == "1" :
-            print("-> Tu as choisi le Héro !")
+            os.system('cls')
+            print("-> Tu as choisi le Héro !\n")
             selection_hero = hero.Hero_class()
             selection_hero.affichage()
+            opponent.init_gears(self)
     
-    def init_gears():
-        return
-
-
+    def init_gears(self):
+        print("Choix de l'équipement")
         
-
-
-
-
+        
 
     
     # if choice_player1 == "2" :
