@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "L'archère",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 0,
+        "dodge": 25
+    },
+    {
+        "id": 2,
+        "name": "Le guerrier",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 0,
+        "dodge": 0
+    },
+    {
+        "id": 3,
+        "name": "La magicienne",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 200,
+        "dodge": 0
+    }
+]
