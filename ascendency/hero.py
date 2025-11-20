@@ -1,4 +1,4 @@
-class Hero:
+class Hero_class:
     def __init__(self, name: str = "Hero", pv: int = 1000, defense: int = 0, attack: int = 0, mana: int = 0, dodge: int = 0):
         self.name = name
         self.pv = pv
@@ -17,5 +17,5 @@ class Hero:
         print("Mana :", self.mana,"(Un hero n'a pas de mana)")
         print("Dodge :", self.dodge,"(Un hero n'a pas de dodge)")
 
-mon_hero = Hero()
+mon_hero = Hero_class()
 mon_hero.affichage()

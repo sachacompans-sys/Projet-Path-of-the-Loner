@@ -42,12 +42,12 @@ class Magicienne:
         self.attack = attack
         self.mana = mana
         self.dodge = dodge
-    
+
     def affichage(self):
-        print("--- STATS DU GUERRIER ---")
+        print("--- STATS DU MAGICIENNE ---")
         print("Name : ",self.name)
         print("PV : ",self.pv)
         print("Defense : ",self.defense)
         print("Attack : ",self.attack)
-        print("Mana :", self.mana,)
+        print("Mana :", self.mana)
         print("Dodge :", self.dodge, "(Un hero n'a pas de dodge)")
