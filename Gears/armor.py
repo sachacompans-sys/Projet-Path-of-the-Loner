@@ -1,4 +1,6 @@
 class Armor:
-    def __init__(self, defense=float, name=str):
-        self.defense = defense
+    def __init__(self, id: int, name: str, rarity: str, defense: int = 0):
+        self.id = id
         self.name = name
+        self.rarity = rarity
+        self.defense = defense
