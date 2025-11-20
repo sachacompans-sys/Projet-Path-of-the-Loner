@@ -3,80 +3,69 @@
         "id": "Foudre",
         "heal": 0,
         "damage": 55,
-        "cost_of_mana": 75,
-        "duration": 8  
+        "cost_of_mana": 75
     },
     {
         "id": "Gel",
         "heal": 0,
         "damage": 20,
-        "cost_of_mana": 30,
-        "duration": 8  
+        "cost_of_mana": 30
     },
     {
         "id": "Poison",
         "heal": 0,
         "damage": 15,
-        "cost_of_mana": 22,
-        "duration": 6
+        "cost_of_mana": 22
     },
     {
         "id": "Boule de neige",
         "heal": 0,
         "damage": 5,
-        "cost_of_mana": 9,
-        "duration": 2
+        "cost_of_mana": 9
     },
     {
         "id": "Sort de soin",
         "heal": 50,
         "damage": 0,
-        "cost_of_mana": 80,
-        "duration": 5
+        "cost_of_mana": 80
     },
     {
         "id": "Sort de rage",
         "heal": 30,
         "damage": 55,
         "bonus_damage": 10,
-        "cost_of_mana": 90,
-        "duration": 7 
+        "cost_of_mana": 90
     },
     {
         "id": "Sort sismique",
         "heal": 0,
         "damage": 15,
         "bonus_damage": 0,
-        "cost_of_mana": 20,
-        "duration": 10 
+        "cost_of_mana": 20
     },
     {
         "id": "Boule de feu",
         "heal": 0,
         "damage": 80,
-        "cost_of_mana": 78,
-        "duration": 0
+        "cost_of_mana": 7
     },
     {
         "id": "Roquette",
         "heal": 0,
         "damage": 100,
-        "cost_of_mana": 100,
-        "duration": 0
+        "cost_of_mana": 100
     },
     {
         "id": "Tornade",
         "heal": 0,
         "damage": 15,
-        "cost_of_mana": 8,
-        "duration": 8
+        "cost_of_mana": 8
     },
     {
         "id": "Sort de précipitation",
         "heal": 0,
         "damage": 0,
         "bonus_vitess": 45,
-        "cost_of_mana": 20,
-        "duration": 6
+        "cost_of_mana": 20
     }
 ]
