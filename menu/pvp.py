@@ -1,17 +1,9 @@
-import ascendency
+from time import sleep
+from ascendency import hero
 
-class Player1:
-    def __init__(self, nom: str, pv: int, defense: int, attack: int, mana: int = 0, dodge: int = 0):
-        self.nom = nom
-        self.pv = pv
-        self.defense = defense
-        self.attack = attack
-        self.mana = mana
-        self.dodge = dodge
-
-class Player2:
-    def __init__(self, nom: str, pv: int, defense: int, attack: int, mana: int = 0, dodge: int = 0):
-        self.nom = nom
+class opponent:
+    def __init__(self, name: str="waiting", pv: int=1000, defense: int=0, attack: int=0, mana: int = 0, dodge: int = 0):
+        self.name = name
         self.pv = pv
         self.defense = defense
         self.attack = attack
@@ -19,20 +11,32 @@ class Player2:
         self.dodge = dodge
     
 
-def choice(self):
-    input("--- CRÉATION DU PERSONNAGE ---")
-    choice_player1 = input ("choisis ton Héro ou une ascendance : (hero(1) / archère(2) / guerrier(3) / magicienne(4))")
-    if choice_player1 == "1" :
-        ascendency.hero()
-    if choice_player1 == "2" :
-        print("ta choisis l\'archère")
-    if choice_player1 == "3" :
-        print("ta choisis le guerrier")
-    if choice_player1 == "4" :
-        print("ta choisis la magicienne")
+    def choice(self):
+        print("------------------- MODE PvP -------------------\n")
+        sleep(0.5)
+        print("--- CRÉATION DU PERSONNAGE ---\n")
+        sleep(0.5)
+        choice_player1 = input ("choisis ton Héro ou une ascendance : hero(1) / archère(2) / guerrier(3) / magicienne(4) : ")
+        print()
+        if choice_player1 == "1" :
+            print("-> Tu as choisi le Héro !")
+            selection_hero = hero.Hero_class()
+            selection_hero.affichage()
+    
+    def init_gears():
+        return
 
-def hero(self):
+
+        
 
 
 
-choice()
+
+
+    
+    # if choice_player1 == "2" :
+    #     print("ta choisis l\'archère")
+    # if choice_player1 == "3" :
+    #     print("ta choisis le guerrier")
+    # if choice_player1 == "4" :
+    #     print("ta choisis la magicienne")
