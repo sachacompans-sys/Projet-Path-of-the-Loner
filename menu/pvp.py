@@ -1,19 +1,38 @@
-import json 
+import ascendency
 
-class Pvp:
-    def __init__(self, player1:int, player2:int):
-        self.player1 = player1
-        self.player2 = player2
+class Player1:
+    def __init__(self, nom: str, pv: int, defense: int, attack: int, mana: int = 0, dodge: int = 0):
+        self.nom = nom
+        self.pv = pv
+        self.defense = defense
+        self.attack = attack
+        self.mana = mana
+        self.dodge = dodge
+
+class Player2:
+    def __init__(self, nom: str, pv: int, defense: int, attack: int, mana: int = 0, dodge: int = 0):
+        self.nom = nom
+        self.pv = pv
+        self.defense = defense
+        self.attack = attack
+        self.mana = mana
+        self.dodge = dodge
     
 
 def choice(self):
+    input("--- CRÉATION DU PERSONNAGE ---")
     choice_player1 = input ("choisis ton Héro ou une ascendance : (hero(1) / archère(2) / guerrier(3) / magicienne(4))")
-    if choice_player1 == "hero":
-        weapon_choice  = input("choisis ton arme :")
-        armor_choice = input("choisis ton armure :")
-    if choice_player1 == "archère":
+    if choice_player1 == "1" :
+        ascendency.hero()
+    if choice_player1 == "2" :
         print("ta choisis l\'archère")
-    if choice_player1 == "guerrier":
+    if choice_player1 == "3" :
         print("ta choisis le guerrier")
-    if choice_player1 == "magicienne":
+    if choice_player1 == "4" :
         print("ta choisis la magicienne")
+
+def hero(self):
+
+
+
+choice()
