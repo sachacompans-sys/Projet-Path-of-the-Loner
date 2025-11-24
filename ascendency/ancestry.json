@@ -1,7 +1,6 @@
 [
     {
-        "id": 1,
-        "name": "L'archère",
+        "name": "Archer",
         "pv": 1000,
         "defense": 0,
         "attack": 0,
@@ -10,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Le guerrier",
+        "name": "Warrior",
         "pv": 1000,
         "defense": 0,
         "attack": 0,
@@ -19,7 +18,7 @@
     },
     {
         "id": 3,
-        "name": "La magicienne",
+        "name": "Magician",
         "pv": 1000,
         "defense": 0,
         "attack": 0,

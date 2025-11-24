@@ -9,6 +9,10 @@ class Hero_class:
 
 #Affichage stats, input Equipement
     def affichage(self):
+
+
+
+
         print("--- STATS DE l'HERO ---")
         print("Name : ",self.name)
         print("PV : ",self.pv)
@@ -16,6 +20,3 @@ class Hero_class:
         print("Attack : ",self.attack)
         print("Mana :", self.mana,"(Un hero n'a pas de mana)")
         print("Dodge :", self.dodge,"(Un hero n'a pas de dodge)")
-
-mon_hero = Hero_class()
-mon_hero.affichage()
