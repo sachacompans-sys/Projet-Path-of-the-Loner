@@ -9,6 +9,7 @@ class Armor:
         self.defense = defense
 
     def dice_roll(self, dice_value:int=0):
+        print(" ")
         input("Lancer le dé, afin de savoir la rareté de votre armure ->")
         dice_value = random.randint(1,100)
         self.read_Armor(dice_value)
@@ -43,9 +44,7 @@ class Armor:
         display_name = [item['name'] for item in rarity_category]
         print(display_name)
         
-        
-
-
+    
 
 
 Test = Armor()
