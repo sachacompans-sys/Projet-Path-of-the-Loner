@@ -25,17 +25,3 @@ class opponent:
             print("-> Tu as choisi le Héro !\n")
             selection_hero = hero.Hero_class()
             selection_hero.affichage()
-            opponent.init_gears(self)
-    
-    def init_gears(self):
-        print("Choix de l'équipement")
-        
-        
-
-    
-    # if choice_player1 == "2" :
-    #     print("ta choisis l\'archère")
-    # if choice_player1 == "3" :
-    #     print("ta choisis le guerrier")
-    # if choice_player1 == "4" :
-    #     print("ta choisis la magicienne")
