@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Archer",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 0,
+        "dodge": 25
+    },
+    {
+        "id": 2,
+        "name": "Warrior",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 0,
+        "dodge": 0
+    },
+    {
+        "id": 3,
+        "name": "Magician",
+        "pv": 1000,
+        "defense": 0,
+        "attack": 0,
+        "mana": 200,
+        "dodge": 0
+    }
+]
