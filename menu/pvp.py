@@ -1,5 +1,6 @@
 from time import sleep
 from ascendency import hero
+from ascendency import ancestry
 import os
 
 
@@ -25,3 +26,18 @@ class opponent:
             print("-> Tu as choisi le Héro !\n")
             selection_hero = hero.Hero_class()
             selection_hero.affichage()
+        elif choice_player1 == "2" : 
+            os.system('cls')
+            print("-> Tu as choisi le L'Archère !\n")
+            selection_hero = ancestry.Archer()
+            selection_hero.load_stats_archer()
+        elif choice_player1 == "3" : 
+            os.system('cls')
+            print("-> Tu as choisi le Guerrier !\n")
+            selection_hero = ancestry.Warrior()
+            selection_hero.load_stats_warrior()
+        elif choice_player1 == "4" : 
+            os.system('cls')
+            print("-> Tu as choisi la Magicienne !\n")
+            selection_hero = ancestry.Magician()
+            selection_hero.load_stats_magician()   

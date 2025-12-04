@@ -1,4 +1,5 @@
-from menu import pvp
+from . import pvp
+from . import pve
 import os
 
 def display_menu():
@@ -11,5 +12,7 @@ def display_menu():
         session = pvp.opponent()
         session.choice()
     else:
-        print("Mode PvE en cours de maintenance (bientôt disponible)")
+        os.system('cls')
+        session = pve.characters()
+        session.choice()
 display_menu()
