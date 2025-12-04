@@ -9,10 +9,6 @@ class Hero_class:
 
 #Affichage stats, input Equipement
     def affichage(self):
-
-
-
-
         print("--- STATS DE l'HERO ---")
         print("Name : ",self.name)
         print("PV : ",self.pv)
