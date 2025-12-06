@@ -1,11 +1,12 @@
 class Hero_class:
-    def __init__(self, name: str = "Hero", pv: int = 1000, defense: int = 0, attack: int = 0, mana: int = 0, dodge: int = 0):
+    def __init__(self, name: str = "Hero", pv: int = 1000, defense: int = 0, attack: int = 0, mana: int = 0, dodge: int = 0, gold: int = 0):
         self.name = name
         self.pv = pv
         self.defense = defense
         self.attack = attack
         self.mana = mana
         self.dodge = dodge
+        self.gold = gold
 
 #Affichage stats, input Equipement
     def affichage(self):

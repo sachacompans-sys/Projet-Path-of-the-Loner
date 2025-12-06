@@ -4,13 +4,14 @@ from menu import pvp
 
 
 class Archer:
-    def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0):
+    def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0, gold: int = 0):
         self.name = name
         self.pv = pv
         self.defense = defense
         self.attack = attack
         self.mana = mana
         self.dodge = dodge
+        self.gold = gold
     
     def load_stats_archer(self):
         with open('ascendency/ancestry.json', 'r', encoding='utf-8') as file:
@@ -23,6 +24,7 @@ class Archer:
         self.attack = stats_dict['attack']
         self.mana = stats_dict['mana']
         self.dodge = stats_dict['dodge']
+        self.gold = stats_dict['gold']
         
         print("--- STATS DE l'ARCHERE ---")
 
@@ -34,13 +36,14 @@ class Archer:
         print("Dodge :", self.dodge)
 
 class Warrior:
-    def __init__(self, name:str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0):
+    def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0, gold: int = 0):
         self.name = name
         self.pv = pv
         self.defense = defense
         self.attack = attack
         self.mana = mana
         self.dodge = dodge
+        self.gold = gold
 
     def load_stats_warrior(self):
         with open('ascendency/ancestry.json', 'r', encoding='utf-8') as file:
@@ -54,6 +57,7 @@ class Warrior:
         self.attack = stats_dict['attack']
         self.mana = stats_dict['mana']
         self.dodge = stats_dict['dodge']
+        self.gold = stats_dict['gold']
         
         print("--- STATS DU GUERRIER ---")
 
@@ -66,13 +70,14 @@ class Warrior:
     
 
 class Magician:
-    def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0):
+    def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0, gold: int = 0):
         self.name = name
         self.pv = pv
         self.defense = defense
         self.attack = attack
         self.mana = mana
         self.dodge = dodge
+        self.gold = gold
 
     def load_stats_magician(self):
         with open('ascendency/ancestry.json', 'r', encoding='utf-8') as file:
@@ -85,6 +90,7 @@ class Magician:
         self.attack = stats_dict['attack']
         self.mana = stats_dict['mana']
         self.dodge = stats_dict['dodge']
+        self.gold = stats_dict['gold']
         
         print("--- STATS DE LA MAGICIENNE ---")
 
