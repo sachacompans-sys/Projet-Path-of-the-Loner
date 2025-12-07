@@ -10,12 +10,6 @@ class Armor:
         self.rarity = rarity
         self.defense = defense
 
-    def dice_roll(self, dice_value:int=0):
-        print()
-        input("Lancer le dé, afin de savoir la rareté de votre armure ->")
-        dice_value = random.randint(1,100)
-        self.read_Armor(dice_value)
-
 
     def read_Armor(self, dice_value:int, rarity_category:str):
         with open("armors.json", "r", encoding="utf-8") as f:
