@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Arc-X",
+        "damage": 100,
+        "bonus": "vitesse de frappe",
+        "rarity": "Legendary"
+    },
+    {
+        "id": 2,
+        "name": "Pelle Mineur",
+        "bonus": "",
+        "damage": 15,
+        "rarity": "Common"
+    },
+    {
+        "id": 3,
+        "name": "Epée Barbare",
+        "bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": 4,
+        "name": "Arc Archère",
+        "bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": 5,
+        "name": "Bombe Squelette",
+        "bonus": "",
+        "damage": 50,
+        "rarity": "Rare"
+    },
+    {
+        "id": 6,
+        "name": "Hâche Valkirie",
+        "bonus": "",
+        "damage": 74,
+        "rarity": "Epic"
+    },
+    {
+        "id": 7,
+        "name": "Marteau Chevaucheur de cochon",
+        "bonus": "",
+        "damage": 58,
+        "rarity": "Rare"
+    },
+    {
+        "id": 8,
+        "name": "Boule du Bouliste",
+        "bonus": "",
+        "damage": 60,
+        "rarity": "Rare"
+    },
+    {
+        "id": 9,
+        "name": "Lance Sorcière de la nuit",
+        "bonus": "",
+        "damage": 25,
+        "rarity": "Common"
+    },
+    {
+        "id": 10,
+        "name": "Arc Archer magique",
+        "bonus": "",
+        "damage": 35,
+        "rarity": "Rare"
+    },
+    {
+        "id": 11,
+        "name": "Hâche Bucheron",
+        "bonus": "",
+        "damage": 46,
+        "rarity": "Common"
+    },
+    {
+        "id": 12,
+        "name": "Poisson Pêcheur",
+        "bonus": "",
+        "damage": 10,
+        "rarity": "Common"
+    },
+    {
+        "id": 13,
+        "name": "Fusil Chasseur",
+        "bonus": "",
+        "damage": 65,
+        "rarity": "Epic"
+    },
+    {
+        "id": 14,
+        "name": "Serbacane Gobelin",
+        "bonus": "",
+        "damage": 31,
+        "rarity": "Rare"
+    },
+    {
+        "id": 15,
+        "name": "Lance-roquette Artificière",
+        "bonus": "",
+        "damage": 84,
+        "rarity": "Legendary"
+    },
+    {
+        "id": 16,
+        "name": "Arc triple-flèches Princesse",
+        "bonus": "",
+        "damage": 92,
+        "rarity": "Legendary"
+    },
+    {
+        "id": 17,
+        "name": "Epée PEKKA",
+        "bonus": "",
+        "damage": 72,
+        "rarity": "Epic"
+    },
+    {
+        "id": 18,
+        "name": "Hâche-boomerang Bourreau",
+        "bonus": "",
+        "damage": 67,
+        "rarity": "Epic"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Casque barbares d'élites",
+        "rarity": "Rare",
+        "defense": 15
+    },
+    {
+        "id": 2,
+        "name": "Armure PEKKA",
+        "rarity": "Epic",
+        "defense": 30
+    },
+    {
+        "id": 3,
+        "name": "Heaume en métal prince ténébreux",
+        "rarity": "Common",
+        "defense": 10
+    },
+    {
+        "id": 4,
+        "name": "Bouclier Recrues Royales",
+        "rarity": "Legendary",
+        "defense": 40
+    },
+    {
+        "id": 5,
+        "name": "Habit de la Sorcière de Nuit",
+        "rarity": "Rare",
+        "defense": 18
+    },
+    {
+        "id": 6,
+        "name": "Tunique de l'Électro-Sorcier",
+        "rarity": "Common",
+        "defense": 11
+    },
+    {
+        "id": 7,
+        "name": "Armure Squelette Géant",
+        "rarity": "Epic",
+        "defense": 35
+    },
+    {
+        "id": 8,
+        "name": "Armure du Mortier Solaire",
+        "rarity": "Legendary",
+        "defense": 38
+    },
+    {
+        "id": 9,
+        "name": "Vareuse du pêcheur",
+        "rarity": "Epic",
+        "defense": 32
+    },
+    {
+        "id": 10,
+        "name": "Épaulettes de la Valkyrie",
+        "rarity": "Rare",
+        "defense": 17
+    },
+    {
+        "id": 11,
+        "name": "Cape du Sorcier de Glace",
+        "rarity": "Epic",
+        "defense": 37
+    },
+    {
+        "id": 12,
+        "name": "Bottes du Mineur",
+        "rarity": "Common",
+        "defense": 8
+    },
+    {
+        "id": 13,
+        "name": "Diadème de la Princesse",
+        "rarity": "Rare",
+        "defense": 20
+    },
+    {
+        "id": 14,
+        "name": "Cuirasse du Molosse de Lave",
+        "rarity": "Legendary",
+        "defense": 50
+    }
+]
