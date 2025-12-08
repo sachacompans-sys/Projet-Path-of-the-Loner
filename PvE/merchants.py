@@ -33,12 +33,12 @@ class City_path:
         print("Que vous cherchiez armes, provisions ou informations, vous trouverez tout ici!!")
         player = input("pour rentrer dans ville (1), pour continuer votre chemin (2): ")
         if not player.isnumeric() or player not in ["1", "2"]:
-            print("shit")
+            print("error")
         elif player == "1":
             print("Vous entrez en ville, Partez a la recherche des marchands")   
             player = input("Appuyer sur 3 pour voir les marchands autour: ")
             if not player.isnumeric() or player not in ["3"]:
-                print("damn")
+                print("error")
             elif player == "3":
                 print("\n=== MARCHANDS DISPONIBLES ===")
                 print("4. Marchand d'armes - Épées, haches, arcs")
@@ -51,7 +51,7 @@ class City_path:
                     print("Pour vous déplacer vers un marchand tapez le numéro qui lui correspond")
                     player = input("Faites votre choix: ")
                     if player not in ["4","5", "6"]:
-                        print("De la D")
+                        print("error")
                     elif player == "4":
                         City.Arms_dealer()
                         with open("shop.json") as f:
@@ -74,7 +74,7 @@ class City_path:
                                 if item["id"] in merchand_potion:
                                     print(json.dumps(item, indent=4, ensure_ascii=False))
                 else :
-                    print("tata")
+                    print("error")
         elif player == "2":
             print("Aurevoir vous vous eloigner de la ville ")
             print("vous avez decider de continuer  votre chemin")
