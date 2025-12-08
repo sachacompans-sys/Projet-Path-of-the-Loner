@@ -3,7 +3,7 @@ import json
 merchand_armor = [1,2,3,4,5,6]
 merchand_arms = [7,9,10,11,12,13,14]
 merchand_potion = [17, 15, 16]
-class Car:
+class City_path:
 
     def __init__(self, user:str,x:int, y:int):
         self.x = x
@@ -46,7 +46,7 @@ class Car:
                 print("6. Marchand de potions - Potions de vie, de mana")
                 player = input("Pour voir votre postion actuel taper 8: ")
                 if player == '8':
-                    City = Car("Hero", 135, 10)
+                    City = City_path("Hero", 135, 10)
                     City.current_position()
                     print("Pour vous déplacer vers un marchand tapez le numéro qui lui correspond")
                     player = input("Faites votre choix: ")
@@ -79,30 +79,7 @@ class Car:
             print("Aurevoir vous vous eloigner de la ville ")
             print("vous avez decider de continuer  votre chemin")
         
-City = Car("Hero", 135, 10)
+City = City_path("Hero", 135, 10)
 City.city()
 #City.current_position()
-#City.move_forward()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#City.move_forward()        
