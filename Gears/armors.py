@@ -66,12 +66,8 @@ class Armor:
         print()
         self.choice = input("Votre choix : ")
         self.add_defense_hero(choice)
-
-    def add_defense_hero(self):
-        return
-
-
         
         
 Test = Armor()
-Test.dice_roll()
+Test.read_Armor()
+Test.choice_in_rarity()
