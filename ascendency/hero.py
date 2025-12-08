@@ -21,7 +21,7 @@ class Hero_class:
         from Gears.weapons import Weapon
         
         print()
-        print(f"--- STATS AVANT ---")
+        print(f"--- STATS ---")
         print(f"Défense : {self.defense} | Attaque : {self.attack}")
         print()
         
@@ -43,7 +43,7 @@ class Hero_class:
         weapon_system.choice_in_rarity(available_weapons, self)
         
         print()
-        print(f"--- STATS APRÈS ---")
+        print(f"--- STATS ---")
         print(f"Défense : {self.defense} | Attaque : {self.attack}")
 
     def equip_item(self, item):
