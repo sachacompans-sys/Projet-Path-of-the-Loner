@@ -1,11 +1,18 @@
-import pvp
+from . import pvp
+from . import pve
+import os
 
 def display_menu():
-    input("-----------Bienvenue dans Path of the Loner-----------")
-    pvp_or_pve = input("Souhaitez-vous jouer en PvP(1) ou Pve(2) :")
+    print()
+    input("---------- Bienvenue dans Path of the Loner ----------")
+    print()
+    pvp_or_pve = input("Souhaitez-vous jouer en PvP(1) ou Pve(2) : ")
     if pvp_or_pve == "1" :
-        pvp.choice()
+        os.system('cls')
+        session = pvp.opponent()
+        session.choice()
     else:
-        print("Mode PvE en cours de maintenance (bientôt disponible)")
-
+        os.system('cls')
+        session = pve.characters()
+        session.choice()
 display_menu()

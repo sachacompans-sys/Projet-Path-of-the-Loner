@@ -1,5 +1,6 @@
-class Spell:
-    def __init__(self, mana_cost=float, name=str, damage=float):
-        self.mana_cost = mana_cost
+class Spells:
+    def __init__(self, id: int, name: str, rarity: str, damage: int = 0):
+        self.id = id
         self.name = name
+        self.rarity = rarity
         self.damage = damage

@@ -1,3 +1,6 @@
-class Weapon:
-    def __init__(self, damage=float, name=str):
+class Weapons:
+    def __init__(self, id: int, name: str, rarity: str, damage: int = 0):
+        self.id = id
+        self.name = name
+        self.rarity = rarity
         self.damage = damage
