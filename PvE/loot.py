@@ -29,7 +29,7 @@ def get_loot(monster_rank):
     if monster_rank == "Normal":
         loot_pool = [i for i in all_items if i['rarity'] == "Common"]
         if random.random() < 0.15:
-            #Le .extend sert à virer si l'utilisateur drop un rare au lieu d'un commun
+            #Le .extend sert Ã virer si l'utilisateur drop un rare au lieu d'un commun
             loot_pool.extend([i for i in all_items if i['rarity'] == "Rare"])
 
     elif monster_rank == "Elite":

@@ -1,42 +1,46 @@
 import json
 import random
-from monsters import Monster
+import os
+from PvE.monsters import Monster
 
 class Room:
     def __init__(self):
-        self.normals = []
-        self.elites = []
-        self.bosses = []
+        self.monsters = []
         self.load_monsters()
 
     def load_monsters(self):
-        with open('bestiary.json', 'r', encoding='utf-8') as file:
-            data = json.load(file)
+        # Trouve le chemin du dossier PvE
+        script_folder = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(script_folder, 'bestiary.json')
 
-        for monster_dict in data:
-            mob = Monster(monster_dict)
-            
-            if mob.type == "Normal":
-                self.normals.append(mob)
-            elif mob.type == "Elite":
-                self.elites.append(mob)
-            elif mob.type == "Boss":
-                self.bosses.append(mob)
+        try:
+            with open(json_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                for m in data:
+                    # ICI : On utilise les cles exactes de ton JSON (Majuscules)
+                    self.monsters.append(Monster(
+                        name=m['Name'],
+                        hp=m['HP'],
+                        damage=m['Damage'],
+                        rank=m['Type'],      # Ton JSON dit "Type", mais le code utilise "rank"
+                        defense=m['Defense'] # On ajoute la defense
+                    ))
+        except FileNotFoundError:
+            print(f"Erreur : Impossible de trouver bestiary.json dans {script_folder}")
+            # Monstre de secours
+            self.monsters.append(Monster("Monstre Bug", 50, 5, "Normal", 0))
 
     def get_normal_room(self):
-        print("--- Vous entrez dans une salle sombre et humide... ---")
-        mob = random.choice(self.normals)
-        print(f" {mob.name} | (HP: {mob.hp} | Dégâts: {mob.damage} | Défense: {mob.defense}) surgit de l'ombre pour attaquer !")
-        return mob
+        normal_monsters = [m for m in self.monsters if m.rank == "Normal"]
+        if not normal_monsters: return self.monsters[0]
+        return random.choice(normal_monsters)
 
     def get_elite_room(self):
-        print("--- L'air devient lourd, une menace puissante approche... ---")
-        mob = random.choice(self.elites)
-        print(f"ATTENTION : {mob.name} | (HP: {mob.hp} | Dégâts: {mob.damage} | Défense: {mob.defense}) vous barre la route !")
-        return mob
+        elite_monsters = [m for m in self.monsters if m.rank == "Elite"]
+        if not elite_monsters: return self.monsters[0]
+        return random.choice(elite_monsters)
 
     def get_boss_room(self):
-        print("--- VOUS SENTEZ UNE PRÉSENCE TERRIFIANTE... ---")
-        mob = random.choice(self.bosses)
-        print(f"DANGER MORTEL : {mob.name} | (HP: {mob.hp} | Dégâts: {mob.damage} | Défense: {mob.defense}) est devant vous !!")
-        return mob
+        boss_monsters = [m for m in self.monsters if m.rank == "Boss"]
+        if not boss_monsters: return self.monsters[0]
+        return random.choice(boss_monsters)

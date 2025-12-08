@@ -1,7 +1,4 @@
 import json
-#from menu import pvp
-
-
 
 
 class Archer:
@@ -28,33 +25,13 @@ class Archer:
         self.gold = stats_dict['gold']
         
         print("--- STATS DE l'ARCHERE ---")
-
-        print("Name : ",self.name)
-        print("PV : ",self.pv)
-        print("Defense : ",self.defense)
-        print("Attack : ",self.attack)
-        print("Mana :", self.mana,"(Un hero n'a pas de mana)")
+        print("Name : ", self.name)
+        print("PV : ", self.pv)
+        print("Defense : ", self.defense)
+        print("Attack : ", self.attack)
+        print("Mana :", self.mana, "(Une archere n'a pas de mana)")
         print("Dodge :", self.dodge)
 
-    #Pour le loot
-    def equip_item(self, item):
-        with open('Gears/weapons.json', 'r', encoding='utf-8') as file:
-            weapons_list = json.load(file)
-
-        with open('Gears/armors.json', 'r', encoding='utf-8') as file:
-            armors_list = json.load(file)
-       
-        print(f"--> Vous equipez : {item['name']}")
-        
-        if 'damage' in item:
-            bonus = item['damage']
-            self.attack = self.attack + bonus
-            print(f"Vos degats augmentent de +{bonus} ! (Attaque actuelle : {self.attack})")
-            
-        elif 'defense' in item:
-            bonus = item['defense']
-            self.defense = self.defense + bonus
-            print(f" Votre defense augmente de +{bonus} ! (Defense actuelle : {self.defense})")
 
 class Warrior:
     def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0, gold: int = 0):
@@ -71,7 +48,6 @@ class Warrior:
             list_data = json.load(file)
         stats_dict = list_data[1]    
 
-        
         self.name = stats_dict['name']
         self.pv = stats_dict['pv']
         self.defense = stats_dict['defense']
@@ -81,33 +57,12 @@ class Warrior:
         self.gold = stats_dict['gold']
         
         print("--- STATS DU GUERRIER ---")
-
-        print("Name : ",self.name)
-        print("PV : ",self.pv)
-        print("Defense : ",self.defense)
-        print("Attack : ",self.attack)
-        print("Mana :", self.mana,"(Un guerrier n'a pas de mana)")
-        print("Dodge :", self.dodge,"(Un guerrier n'a pas de chance de dodge)")
-
-    #Pour le loot
-    def equip_item(self, item):
-        with open('Gears/weapons.json', 'r', encoding='utf-8') as file:
-            weapons_list = json.load(file)
-
-        with open('Gears/armors.json', 'r', encoding='utf-8') as file:
-            armors_list = json.load(file)
-       
-        print(f"--> Vous equipez : {item['name']}")
-        
-        if 'damage' in item:
-            bonus = item['damage']
-            self.attack = self.attack + bonus
-            print(f"Vos degats augmentent de +{bonus} ! (Attaque actuelle : {self.attack})")
-            
-        elif 'defense' in item:
-            bonus = item['defense']
-            self.defense = self.defense + bonus
-            print(f" Votre defense augmente de +{bonus} ! (Defense actuelle : {self.defense})")
+        print("Name : ", self.name)
+        print("PV : ", self.pv)
+        print("Defense : ", self.defense)
+        print("Attack : ", self.attack)
+        print("Mana :", self.mana, "(Un guerrier n'a pas de mana)")
+        print("Dodge :", self.dodge, "(Un guerrier n'a pas de chance de dodge)")
 
 class Magician:
     def __init__(self, name: str = "", pv: int = 0, defense: int= 0, attack: int = 0, mana: int= 0, dodge: int = 0, gold: int = 0):
@@ -133,31 +88,9 @@ class Magician:
         self.gold = stats_dict['gold']
         
         print("--- STATS DE LA MAGICIENNE ---")
-
-        print("Name : ",self.name)
-        print("PV : ",self.pv)
-        print("Defense : ",self.defense)
-        print("Attack : ",self.attack)
+        print("Name : ", self.name)
+        print("PV : ", self.pv)
+        print("Defense : ", self.defense)
+        print("Attack : ", self.attack)
         print("Mana :", self.mana)
-        print("Dodge :", self.dodge,"(Une magicienne n'a pas de chance de dodge)")
-
-
-    #Pour le loot
-    def equip_item(self, item):
-        with open('Gears/weapons.json', 'r', encoding='utf-8') as file:
-            weapons_list = json.load(file)
-
-        with open('Gears/armors.json', 'r', encoding='utf-8') as file:
-            armors_list = json.load(file)
-       
-        print(f"--> Vous equipez : {item['name']}")
-        
-        if 'damage' in item:
-            bonus = item['damage']
-            self.attack = self.attack + bonus
-            print(f"Vos degats augmentent de +{bonus} ! (Attaque actuelle : {self.attack})")
-            
-        elif 'defense' in item:
-            bonus = item['defense']
-            self.defense = self.defense + bonus
-            print(f"Votre defense augmente de +{bonus} ! (Defense actuelle : {self.defense})")
+        print("Dodge :", self.dodge, "(Une magicienne n'a pas de chance de dodge)")
