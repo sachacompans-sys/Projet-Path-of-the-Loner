@@ -1,4 +1,7 @@
 import json
+import random
+import os
+
 
 class Hero_class:
     def __init__(self, name: str = "Hero", pv: int = 1000, defense: int = 0, attack: int = 0, mana: int = 0, dodge: int = 0, gold: int = 0):
@@ -11,20 +14,47 @@ class Hero_class:
         self.gold = gold
 
     def display(self):
-        print("--- STATS DE l'HERO ---")
-        print("Name : ",self.name)
-        print("PV : ",self.pv)
-        print("Defense : ",self.defense)
-        print("Attack : ",self.attack)
-        print("Mana :", self.mana,"(Un hero n'a pas de mana)")
-        print("Dodge :", self.dodge,"(Un hero n'a pas de dodge)")
+        self.dice_roll()
 
-    
+    def dice_roll(self):
+        from Gears.armor import Armor
+        from Gears.weapons import Weapon
+        
+        print()
+        print(f"--- STATS AVANT ---")
+        print(f"Défense : {self.defense} | Attaque : {self.attack}")
+        print()
+        
+        input("Lancer le dé pour votre armure ->")
+        dice_value_armor = random.randint(1, 100)
+        print(f"Résultat du dé : {dice_value_armor}")
+        
+        armor_system = Armor()
+        available_armors = armor_system.read_Armor(dice_value_armor)
+        armor_system.choice_in_rarity(available_armors, self)
+        
+        print()
+        input("Lancer le dé pour votre arme ->")
+        dice_value_weapon = random.randint(1, 100)
+        print(f"Résultat du dé : {dice_value_weapon}")
+        
+        weapon_system = Weapon()
+        available_weapons = weapon_system.read_Weapon(dice_value_weapon)
+        weapon_system.choice_in_rarity(available_weapons, self)
+        
+        print()
+        print(f"--- STATS APRÈS ---")
+        print(f"Défense : {self.defense} | Attaque : {self.attack}")
+
     def equip_item(self, item):
-        with open('Gears/weapons.json', 'r', encoding='utf-8') as file:
+        base_path = os.path.dirname(os.path.dirname(__file__))
+        weapons_path = os.path.join(base_path, 'Gears', 'weapons.json')
+        armors_path = os.path.join(base_path, 'Gears', 'armor.json')
+        
+        with open(weapons_path, 'r', encoding='utf-8') as file:
             weapons_list = json.load(file)
 
-        with open('Gears/armors.json', 'r', encoding='utf-8') as file:
+        with open(armors_path, 'r', encoding='utf-8') as file:
             armors_list = json.load(file)
        
         print(f"--> Vous equipez : {item['name']}")
@@ -38,3 +68,8 @@ class Hero_class:
             bonus = item['defense']
             self.defense = self.defense + bonus
             print(f"Votre defense augmente de +{bonus} ! (Defense actuelle : {self.defense})")
+
+
+if __name__ == "__main__":
+    hero = Hero_class()
+    hero.display()
