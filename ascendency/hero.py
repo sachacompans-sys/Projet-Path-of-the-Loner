@@ -46,29 +46,6 @@ class Hero_class:
         print(f"--- STATS ---")
         print(f"Défense : {self.defense} | Attaque : {self.attack}")
 
-    def equip_item(self, item):
-        base_path = os.path.dirname(os.path.dirname(__file__))
-        weapons_path = os.path.join(base_path, 'Gears', 'weapons.json')
-        armors_path = os.path.join(base_path, 'Gears', 'armor.json')
-        
-        with open(weapons_path, 'r', encoding='utf-8') as file:
-            weapons_list = json.load(file)
-
-        with open(armors_path, 'r', encoding='utf-8') as file:
-            armors_list = json.load(file)
-       
-        print(f"--> Vous equipez : {item['name']}")
-        
-        if 'damage' in item:
-            bonus = item['damage']
-            self.attack = self.attack + bonus
-            print(f"Vos degats augmentent de +{bonus} ! (Attaque actuelle : {self.attack})")
-            
-        elif 'defense' in item:
-            bonus = item['defense']
-            self.defense = self.defense + bonus
-            print(f"Votre defense augmente de +{bonus} ! (Defense actuelle : {self.defense})")
-
 
 if __name__ == "__main__":
     hero = Hero_class()
