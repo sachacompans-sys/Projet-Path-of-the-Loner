@@ -73,38 +73,20 @@ class Armor:
             if not available_armors:
                 print("Aucune armure trouvée pour cette rareté.")
                 return
-
-            sleep(1) # Raccourci pour le test, remets 3 si tu veux
-            # os.system('cls') # Décommenter sur Windows pour nettoyer l'écran
-
+            sleep(1)
             print(f'\nVous pouvez choisir parmi {len(available_armors)} armures {self.rarity} :')
-
-            # Utilisation de enumerate pour afficher un numéro (1, 2, 3...) devant chaque armure
-            # Cela évite de gérer des compteurs manuels
             for index, armor in enumerate(available_armors, 1):
                 print(f"{index}. {armor['name']} (Défense : {armor['defense']})")
-
             print()
-
-            # Boucle pour s'assurer que le joueur entre un bon numéro
             while True:
                 try:
                     choix_utilisateur = int(input("Votre choix (numéro) : "))
-
-                    # Vérifie si le numéro est bien dans la liste
                     if 1 <= choix_utilisateur <= len(available_armors):
-                        # On récupère l'armure choisie
-                        # On fait -1 car les listes commencent à 0, mais l'affichage commence à 1
                         selected_armor_data = available_armors[choix_utilisateur - 1]
-
-                        # Mise à jour des attributs de l'objet Armor actuel
                         self.id = selected_armor_data['id']
                         self.name = selected_armor_data['name']
                         self.defense = selected_armor_data['defense']
-
                         print(f"\n✅ Vous avez choisi : {self.name}")
-
-                        # APPEL DE LA FONCTION POUR EQUIPER LE HÉROS
                         self.equip_on_hero(hero_instance)
                         break
                     else:
@@ -112,35 +94,12 @@ class Armor:
                 except ValueError:
                     print("Erreur : Veuillez entrer un nombre valide.")
 
+    
     def equip_on_hero(self, hero):
-        """Met à jour les stats du héros avec l'armure choisie"""
         hero.defense_bonus = self.defense
         print(f"L'armure a été équipée sur {hero.name} !")
         print(f"Sa défense augmente de +{self.defense}.")
 
-
-# --- ZONE DE TEST (MAIN) ---
-
-if __name__ == "__main__":
-    # 1. Création du Héros
-    mon_hero = Hero("Lancelot")
-    mon_hero.show_stats()
-
-    # 2. Lancement du système d'armure
-    systeme_armure = Armor()
-    
-    # Simulation d'un lancer de dé (ex: 75 pour du Rare)
-    valeur_de = random.randint(1, 100)
-    
-    # Récupération de la liste filtrée
-    liste_armures = systeme_armure.get_armors_by_rarity(valeur_de)
-    
-    # Choix et équipement
-    systeme_armure.choice_in_rarity(liste_armures, mon_hero)
-    
-    # Vérification finale
-    mon_hero.show_stats()
-        
         
 Test = Armor()
 Test.read_Armor()
