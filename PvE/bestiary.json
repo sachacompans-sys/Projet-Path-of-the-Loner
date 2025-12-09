@@ -13,7 +13,7 @@
         "Name": "Bébé Dragon",
         "Type": "Normal",
         "HP": 300,
-        "Damage": 150,
+        "Damage": 60,
         "Defense": 7,
         "gold_drop": 45
     },
@@ -31,7 +31,7 @@
         "Name": "Mini PEKKA",
         "Type": "Normal",
         "HP": 350,
-        "Damage": 100,
+        "Damage": 65,
         "Defense": 10,
         "gold_drop": 60
     },
